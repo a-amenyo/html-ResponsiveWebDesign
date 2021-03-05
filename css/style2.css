@@ -1,0 +1,92 @@
+/* NAVBAR  */
+.navbar{
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:white;
+    
+}
+.navbar #si{
+    color: white;
+}
+
+.navbar button {
+    width: 120px;
+    border: 0;
+    border-radius: 20px;
+    padding: 12px 10px;
+    color: white;
+    border: none;
+    outline: none;
+    background: linear-gradient(to right,#0072ce, blue );
+    cursor: pointer;
+    transition: width 0.5s;
+}
+.navbar button:hover{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav{
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+    margin: 20px 5px 5px 0px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+ nav ul li {
+    list-style: none;
+    display: inline-block;
+    list-style: none;
+    margin-right: 40px;
+    text-align: right;   
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px ; 
+    font-family: sst,Arial,sans-serif;
+}
+nav ul li a:hover {
+   color:blue;
+}
+
+/* desktop: 1200px;
+laptop: 1024px;
+tablet:768px;
+phone:480px; */
+
+
+@media only screen and (max-width: 768px){
+    nav ul {
+        width: 100%;
+        background: linear-gradient(to right,#0072ce, blue );
+        color: white;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+
+    }
+    nav ul li a {
+        color: white;
+        display: block;
+        margin-top: 0px;
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+}
+
+
